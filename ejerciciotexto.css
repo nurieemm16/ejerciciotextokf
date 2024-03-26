@@ -1,0 +1,127 @@
+.texto-gradualmente {
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 36px;
+    font-weight: bold;
+    opacity: 0;
+    animation: aparecer 7s forwards;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(200px); /*esto mueve de 200 a 0 en el eje de la y, de abajo a arriba */
+    }
+
+    to {
+        opacity: 1; /*esto es la opacidad de 0 a 1 */
+        transform: translateY(0);
+    }
+}
+
+.texto-gradualmente span {
+    animation: aparecer-letra 2s forwards;
+    opacity: 0;
+    display: inline-block;
+}
+
+@keyframes aparecer-letra {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*
+La pseudo-clase nth-child() es útil para aplicar estilos a elementos específicos en una lista o una serie de elementos, sin necesidad de asignar clases individuales a cada uno de ellos.  */
+
+.texto-gradualmente span:nth-child(1) {
+    animation-delay: 0s;
+    color: aqua;
+}
+
+.texto-gradualmente span:nth-child(2) {
+    animation-delay: 0.2s;
+    color: palevioletred;
+}
+
+.texto-gradualmente span:nth-child(3) {
+    animation-delay: 0.4s;
+    color: darkolivegreen;
+}
+
+.texto-gradualmente span:nth-child(4) {
+    animation-delay: 0.6s;
+    color: chartreuse;
+}
+
+.texto-gradualmente span:nth-child(5) {
+    animation-delay: 0.8s;
+    color: brown;
+}
+
+.texto-gradualmente span:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.texto-gradualmente span:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+.texto-gradualmente span:nth-child(8) {
+    animation-delay: 1.4s;
+}
+
+.texto-gradualmente span:nth-child(9) {
+    animation-delay: 1.6s;
+}
+
+.texto-gradualmente span:nth-child(10) {
+    animation-delay: 1.8s;
+}
+
+.texto-gradualmente span:nth-child(11) {
+    animation-delay: 2s;
+}
+
+.texto-gradualmente span:nth-child(12) {
+    animation-delay: 2.2s;
+}
+
+.texto-gradualmente span:nth-child(13) {
+    animation-delay: 2.4s;
+}
+
+.texto-gradualmente span:nth-child(14) {
+    animation-delay: 2.6s;
+}
+
+.texto-gradualmente span:nth-child(15) {
+    animation-delay: 2.8s;
+}
+
+.texto-gradualmente span:nth-child(16) {
+    animation-delay: 3s;
+}
+
+.texto-gradualmente span:nth-child(17) {
+    animation-delay: 3.2s;
+}
+
+.texto-gradualmente span:nth-child(18) {
+    animation-delay: 3.4s;
+}
+
+.texto-gradualmente span:nth-child(19) {
+    animation-delay: 3.6s;
+}
+
+.texto-gradualmente span:nth-child(20) {
+    animation-delay: 3.8s;
+}
